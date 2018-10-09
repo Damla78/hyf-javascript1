@@ -63,7 +63,7 @@ printObj(objVehicle);
 'a blue motorbike' for example when called as vehicleType("blue", 2)*/
 function vehicleType(color, typeVeh) {
   let str = 'a ' + color;
-  str += + (typeVeh === 1) ? ' car' : ' motorbike';
+  str += (typeVeh === 1) ? ' car' : ' motorbike';
   return str;
 }
 console.log(vehicleType('red', 1));
@@ -86,14 +86,8 @@ function vehicleType3(color, type, ageVehicle) {
 }
 console.log(vehicleType3('blue', 1, 5));
 /*Make a list of vehicles, you can add "motorbike", "caravan", "bike", or more.*/
-let listVehicles = [];
-listVehicles.push('car');
-listVehicles.push('motorbike');
-listVehicles.push('bike');
-listVehicles.push('caravan');
-listVehicles.push('boat');
-listVehicles.push('metro');
-listVehicles.push('train');
+let listVehicles = ['car', 'motorbike', 'bike', 'caravan', 'boat', 'metro', 'train'];
+
 
 /*How do you get the third element from that list?*/
 console.log(listVehicles[2]);
